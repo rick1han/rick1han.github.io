@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+    <title>Big Data Cloud Computing: Elastic OS</title>
+    <script language="JavaScript">
+
+function miniwinpopup(x, y, myurl, targetstring){
+
+
+
+                   if (navigator.appName == "Netscape"){
+
+
+
+                                  if ((navigator.appVersion.substring(0, 3) == "3.0")
+
+
+
+                                || (navigator.appVersion.substring(0, 3) == "4.0")) {
+
+
+
+                                                window1 = window.open(myurl, targetstring,
+
+
+
+                                                "width="+x+",height="+y+",resizable=1,status=1,menubar=0,scrollbars=1");
+
+
+
+                                                window1.focus();
+
+
+
+                                  }
+
+
+
+                                  else {  // Netscape 2
+
+
+
+                                                window.open(myurl, targetstring,
+
+
+
+                                                                "width="+x+",height="+y+",resizable=1,status=1,menubar=0,scrollbars=1");
+
+
+
+                                  }
+
+
+
+                   }
+
+
+
+                   else { // MSIE (?)
+
+
+
+                                   window1 = window.open(myurl, targetstring,
+
+
+
+                                                "width="+x+",height="+y+",resizable=1,status=1,menubar=0,scrollbars=1");
+
+
+
+
+
+
+
+                   }
+
+
+
+}
+   </script>
+  </head>
+  <body style="background-image: url(bg_gray6.gif); color: rgb(0, 0, 0);
+    background-color: rgb(0, 30, 60);" vlink="#00ffff" link="#ffff00"
+    alink="#ff0000">
+    <center>
+      <table valign="BOTTOM" width="600" height="19" cellspacing="0"
+        cellpadding="0" border="0">
+        <tbody>
+          <tr height="19">
+            <td>
+              <center><img src="BlueMarbleLine.gif" width="556"
+                  height="10"></center>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <center>
+        <h2><font face="WbHelvetica"><font color="#ffffff">Elastic OS:
+              Creating an Auto-Scalable Linux for Data Center Computing<br>
+            </font></font></h2>
+      </center>
+      <!--
+
+-->
+      <center>
+        <center>
+          <p><img src="BlueMarbleLine.gif" width="556" height="10"></p>
+        </center>
+        <table width="600" border="1">
+          <tbody>
+            <tr>
+              <td colspan="2" style="vertical-align: top;"> <font
+                  color="#ffffff"> We are developing an Elastic
+                  operating system called 'ElasticOS' for the
+                  cloud.&nbsp; The goal is to support scaling of big
+                  data applications in the cloud without requiring them
+                  to be rewritten to explicitly incorporate
+                  elasticity.&nbsp; We are modifying the Linux kernel to
+                  achieve this goal.&nbsp; <br>
+                  <br>
+                  We have built a version of ElasticOS in Linux and have
+                  published a technical report on it at:<br>
+                  <ul>
+                    <li>Ehab Ababneh, Zaid Al-Ali, Sangtae Ha, Richard
+                      Han, Eric Keller, "<a
+                        href="https://arxiv.org/abs/1806.00885">Elasticizing
+
+
+
+
+
+                        Linux via Joint Disaggregation of Memory and
+                        Computation</a>", Cite&nbsp;as: <a
+                        href="https://arxiv.org/abs/1806.00885">arXiv:1806.00885</a>,
+                      June 2018.</li>
+                  </ul>
+                  <p>We've also released ElasticOS as <a
+                      href="https://github.com/zaid-alali/ElasticOS-2.6">open
+
+
+                      source on github</a>.&nbsp; <br>
+                  </p>
+                  <ul>
+                  </ul>
+                  <p><font color="#ffffff"><font color="#ffffff">We are
+                        expanding this work into the realm of serverless
+                        computing:</font> </font></p>
+                  <ul>
+                    <font color="#ffffff">
+                      <li>Zaid Al-Ali, Sepidh Goodarzy, Ethan Hunter,
+                        Sangtae Ha, Richard Han, Eric Keller, Eric
+                        Rozner, "<a
+href="http://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiSsffB75PdAhWH7IMKHdneBBkQFjAAegQIDBAC&amp;url=http%3A%2F%2Fericrozner.com.s3-website-us-east-1.amazonaws.com%2Fpapers%2Fserverless_wosc18.pdf&amp;usg=AOvVaw001gSWDm2EfqB11-7BebQ3">Making
+
+
+
+                          Serverless Computing More Serverless</a>",
+                        Workshop on Serverless Computing (WoSC) at&nbsp;
+                        IEEE CLOUD (International Conference on Cloud
+                        Computing) 2018, 4 pages, invited paper.</li>
+                    </font>
+                  </ul>
+                  <font color="#ffffff"> </font>
+                  <p></p>
+                </font><font color="#ffffff">A <a
+href="http://synergy.cs.vt.edu/2015-nsf-xps-workshop/reports/Richard_Han_45-Conference_Presentation_ElasticOS_XPS_2015.2.pdf">talk
+
+
+
+
+                    on ElasticOS</a> was given at the<a
+                    href="http://people.duke.edu/%7Ebcl15/workshop/xps15/program.html">
+                    National Science Foundation (NSF) Workshop on
+                    Exploiting Parallelism and Scalability (XPS) 2015</a>.&nbsp;
+
+
+
+
+
+
+
+
+                  The ElasticOS research project is funded by an XPS
+                  award from NSF.<br>
+                  <br>
+                  Our paper describing very early work and our vision on
+                  ElasticOS was published and presented at HotOS 2013:<br>
+                  <ul>
+                    <li><a
+href="https://www.usenix.org/system/files/conference/hotos13/hotos13-gupta.pdf">Amit
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Gupta, Ehab Ababneh, Richard Han, Eric Keller,
+                        "Towards Elastic Operating Systems", HotOS 2013.</a></li>
+                  </ul>
+                </font>
+                <p><font color="#ffffff"><font color="#ffffff">We have
+                      also published a tech report on a related approach
+                      for memory scaling that we call FluidMem:</font> </font></p>
+                <ul>
+                  <font color="#ffffff">
+                    <li>Blake Caldwell, Youngbin Im, Sangtae Ha, Richard
+                      Han, Eric Keller, "<a
+                        href="https://arxiv.org/abs/1707.07780">FluidMem:
+
+
+
+
+
+
+
+                        Memory as a Service for the Datacenter</a>",
+                      Cite&nbsp;as: <a
+                        href="https://arxiv.org/abs/1707.07780">arXiv:1707.07780</a>
+                      [cs.OS], July 2017.</li>
+                  </font>
+                </ul>
+                <p><font color="#ffffff">FluidMem has been released as <a
+                      href="https://github.com/blakecaldwell/fluidmem">open
+
+
+                      source on github</a>. <br>
+                  </font></p>
+                <ul>
+                  <font color="#ffffff"> </font>
+                </ul>
+                <font color="#ffffff"> </font>
+                <p><br>
+                </p>
+                <font color="#ffffff">
+                  <ul>
+                  </ul>
+                  <img alt="ElasticOS" src="./elasticos.png" width="619"
+                    height="395"> The concept of ElasticOS is shown in
+                  the Figure.&nbsp; We are motivated by the trend
+                  towards cloud computing, wherein large data centers
+                  contain many racks of machines that are available for
+                  rental on demand by server applications processing big
+                  data and handling large volumes of network traffic and
+                  I/O.&nbsp; Current approaches to elasticity, such as
+                  elastic load balancers, require the application
+                  developer to be explicitly aware of elasticity,
+                  incorporating extra scripting logic into their
+                  programs to spawn extra virtual machines when the load
+                  reaches a certain threshold.&nbsp; Moreover, the
+                  application developer is forced to manually
+                  synchronize the application state between the multiple
+                  VM instances.<br>
+                  <br>
+                  Instead, we aspire towards an approach whereby the
+                  application developer is largely unaware of whether
+                  their application server is running on one machine or
+                  a thousand machines.&nbsp; Application developers
+                  should focus on developing application logic and
+                  functionality, while the OS underneath the application
+                  will automatically and elastically scale to "stretch"
+                  a process or thread simultaneously across many
+                  machines. <br>
+                  <br>
+                  We achieve stretching of virtual memory by creating an
+                  <i>elastic page table</i> (see paper), wherein thread
+                  execution can jump between nodes and operate on data
+                  pages in the address space that are partitioned or
+                  sharded across different nodes.&nbsp; In this way, we
+                  hope to exploit locality within a thread as well as
+                  concurrency across threads in order to group or
+                  cluster data pages together on the same node that are
+                  being accessed together in time.&nbsp; <br>
+                  <br>
+                  Note that our approach is the opposite of distributed
+                  shared memory (DSM), i.e. in ElasticOS data pages are
+                  sharded across different machines and execution moves
+                  towards a single page of data, whereas in DSM data
+                  page copies move towards execution.&nbsp; As a result,
+                  we can see that ElasticOS is "reverse DSM" and has the
+                  useful scalability property that N writes to a data
+                  page by N threads, each on a different machine, will
+                  cause 2N context jumps to and from the machine where
+                  the data page is placed, compared to N<sup>2</sup>
+                  consistency/coherency messages in DSM.&nbsp; We think
+                  this linear property will make the ElasticOS approach
+                  much more scalable.<br>
+                  <br>
+                  Our approach also differs from Single System Image
+                  (SSI) cluster or grid operating systems, like
+                  Kerrighed and Xtreem OS, as well as earlier efforts
+                  like MOSIX, open MOSIX and Linux PMI, which use full
+                  process migration.&nbsp; These approaches move a
+                  process from one machine to another to spread load,
+                  but are limited by the resources on the one machine
+                  where the process is executed, in contrast to our
+                  approach which stretches a process or thread
+                  simultaneously across multiple nodes to jointly and
+                  concurrently exploit the memory, CPU and networking of
+                  other machines.&nbsp; SSI approaches also tend to use
+                  some form of DSM, which suffer from the limitations
+                  noted earlier.<br>
+                  <br>
+                  Our vision of Elastic OS extends beyond elasticizing
+                  memory, and includes elasticizing CPU and network I/O
+                  resources.&nbsp; That is, just as a large in-memory
+                  database application should be able to expand and take
+                  advantage of additional memory available on other rack
+                  machines, then a network-intensive server such as a
+                  Web server should be able to take advantage of the
+                  additional NICs on other machines, and a
+                  compute-intensive job should be able to take advantage
+                  of the extra cores on other rack machines.<br>
+                  <br>
+                  We are currently integrating our approach towards
+                  elasticity into the Linux kernel.&nbsp; Among the
+                  future topics of research that we intend to explore
+                  are:<br>
+                  <ul>
+                    <li>Adaptive page placement policies</li>
+                    <li>Elastic I/O<br>
+                    </li>
+                    <li>Fault tolerance</li>
+                  </ul>
+                  <p>We welcome feedback and participation, and are
+                    excited about the potential for this research
+                    project.<br>
+                    <br>
+                  </p>
+                </font></td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="index.html"><img alt="home page" src="home.jpeg"
+            style="border: 0px solid ; width: 60px; height: 60px;"></a><br>
+        <big style="color: rgb(255, 255, 255);"><br>
+        </big><img src="BlueMarbleLine.gif" width="556" height="10">&nbsp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </center>
+    </center>
+  </body>
+</html>
